@@ -1,0 +1,96 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+<section>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="image">
+    <img src="{% static 'image/pic1.jpg' %}" class="img-fluid" alt="...">
+  </div> 
+</div>
+  <hr class="one">
+    <div class="carousel mx-auto">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-10">
+                <p>Wedding Planning</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-10">
+                <img src="{% static 'image/pic2.jpg' %}" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-10">
+                <p>Design & Decor</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-10">
+                <img src="{% static 'image/pic2.jpg' %}" class="img-fluid" alt="...">
+              </div>
+            </div>
+           
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-10">
+                <p>Food & Catering</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-10">
+                <img src="{% static 'image/pic2.jpg' %}" class="img-fluid" alt="...">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="two">
+    <h2>Event Teams</h2>
+    <hr class="three">
+    <div class="cards">
+        <div class="row p-5 mx-auto">
+          <div class="col-lg-3 col-md-6 col-12 mx-auto">
+            <div class="card" style="width: 15rem;">
+              <img src="{% static 'image/pic2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mx-auto">
+            <div class="card" style="width: 15rem;">
+              <img src="{% static 'image/pic2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mx-auto">
+            <div class="card" style="width: 15rem;">
+              <img src="{% static 'image/pic2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mx-auto">
+            <div class="card" style="width: 15rem;">
+              <img src="{% static 'image/pic2.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="four">
+    </div>
+      </section>
+
+
+
+
+{% endblock %}

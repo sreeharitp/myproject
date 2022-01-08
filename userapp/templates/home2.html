@@ -1,0 +1,114 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-3 pt-5">
+    <div id="filter">
+        <div class="border-bottom pb-2 ml-2">
+            <h4 id="">Filters</h4>
+        </div>
+        <div class="py-2 border-bottom ml-3">
+            <h6 class="font-weight-bold">Categories</h6>
+            <div id=""><span class="fa fa-minus"></span></div>
+            <form>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Wedding Planners</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Caterers</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Photographers</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Decorators</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Food & Drinks</label> </div>
+            </form>
+        </div>
+        <div class="py-2 border-bottom ml-3">
+            <h6 class="font-weight-bold">Locations</h6>
+            <div id=""><span class="fa fa-minus"></span></div>
+            <form>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Calicut</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Kannur</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Wayanad</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Malappuram</label> </div>
+                <div class="form-group"> <input type="checkbox" id=""> <label for="">Palakkad</label> </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
+  <div class="row-lg-6">
+    <div class="results">
+      <h6>101 Results</h6>
+    </div>
+    <div class="hori-card p-5">
+    <div class="card mb-3" style="max-width:750px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{% static 'image/pic2.jpg' %}" class="img-fluid" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 750px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{% static 'image/pic2.jpg' %}" class="img-fluid" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 750px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{% static 'image/pic2.jpg' %}" class="img-fluid" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><button type="button" class="btn"><i class="fa fa-chevron-left"></i>  Previous</button></li>
+        <li class="page-item"><button type="button" class="btn">1</button></li>
+        <li class="page-item"><button type="button" class="btn">2</button></li>
+        <li class="page-item"><button type="button" class="btn">3</button></li>
+        <li class="page-item"><button type="button" class="btn">4</button></li>
+        <li class="page-item"><button type="button" class="btn">5</button></li>
+        <li class="page-item"><button type="button" class="btn">6</button></li>
+        <li class="page-item"><button type="button" class="btn">Next  <i class="fa fa-chevron-right"></i></button></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</div>
+</div>
+          
+           
+    
+  
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,152 @@
+body{
+    font-family: 'Ubuntu',sans-serif;
+}
+.nav1{
+    height: 60px;
+    padding: 0 35px 0 35px;
+    font-family:'Ubuntu',sans-serif;
+    color: #FF645A;
+    
+}
+.nav1 .logout{
+    border: 1px solid #FF645A;
+    background-color: #FF645A;
+    color: white;
+}
+.nav2{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    background-color: #f3f3f3;
+}.nav2 .navbar{
+    padding: 0 16px 0 16px;
+}
+
+.nav1 button{
+    border: 1px solid ;
+    border-radius: 4px;
+
+}
+.nav2 ul li{
+    padding: 0 20px 0 20px;
+}
+.nav2 a{
+    color: black;
+}
+.nav2 .dropdown-menu{
+    padding: 0;
+    text-align: center;
+}
+.nav2 .dropdown-menu a{
+    padding:0;
+}
+.text-right .btn1{
+    margin:60px 0 0 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF645A;
+    color: white;
+}.table1 h3{
+    margin: 10px 0 0 0;
+}table button{
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+}table .view{
+    background-color: #5680e9;
+    color: white;
+}table .active{
+    background-color: #3cc47c;
+    color: white;
+}
+table .inactive{
+    background-color: #e9b000;
+    color: white;
+}
+table .paid{
+    background-color: #29975c;
+    color: white;
+}
+table .pending{
+    border: none;
+    color: red;
+    background-color: white;
+}
+table .edit{
+    background-color: #506AD4;
+    color: white;
+}
+table .delete{
+    background-color: #FC2D59;
+    color: white;
+}
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+  .star-inactive {
+    color: #e0dfdc;
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+  .star{
+      width: 190px;
+  }
+
+/* dashboard */
+
+
+.order-card {
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg,#4099ff,#73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg,#FF5370,#ff869a);
+}
+
+
+.order-card {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all .5s ease;
+}
+.order-card:hover{
+    transform: scale(1.05);
+}
+
+.order-card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+.card i{
+    font-size: 44px;
+}
+.card span{
+    font-size: 40px;
+}

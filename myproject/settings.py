@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'userapp'
+    'userapp',
+    'adminapp',
+    'eventapp'
 ]
 
 MIDDLEWARE = [
@@ -57,6 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR,'userapp/templates'],
+        'DIRS': [BASE_DIR,'adminapp/templates'],
+        'DIRS': [BASE_DIR,'eventapp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +123,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES = [
-    os.path.join(BASE_DIR,'userapp/static')
+    os.path.join(BASE_DIR,'userapp/static'),
+    os.path.join(BASE_DIR,'adminapp/static'),
+    os.path.join(BASE_DIR,'eventapp/static')
 ]
 
 # Default primary key field type

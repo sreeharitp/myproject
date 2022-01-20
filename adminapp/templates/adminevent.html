@@ -1,0 +1,79 @@
+{% extends 'master2.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row table1 p-3">
+    <div class="col-lg-6 col-md-6 col-8 p-0">
+      <div class="my-auto">
+        <h3>Event Teams</h3>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-4 my-auto p-0">
+      <div class="text-right">
+        <a href="addteam"><button class="btn1">Add Teams</button></a>
+      </div>
+    </div>
+    <div class="w-100 text-center pt-4">
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Status</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>E4 events</td>
+            <td>Malappuram</td>
+            <td>8086643724</td>
+            <td>Sreehari</td>
+            <td><button class="active">Active</button></td>
+            <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>E4 events</td>
+            <td>Malappuram</td>
+            <td>8086643724</td>
+            <td>Sreehari</td>
+            <td><button class="active">Active</button></td>
+            <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>E4 events</td>
+            <td>Malappuram</td>
+            <td>8086643724</td>
+            <td>Sreehari</td>
+            <td><button class="inactive">Inctive</button></td>
+            <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>E4 events</td>
+            <td>Malappuram</td>
+            <td>8086643724</td>
+            <td>Sreehari</td>
+            <td><button class="active">Active</button></td>
+            <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

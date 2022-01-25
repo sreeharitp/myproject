@@ -5,5 +5,8 @@ urlpatterns = [
     path('booking',views.bookFn,name='booking'),
     path('finished',views.finishFn,name='finished'),
     path('profedit',views.editFn,name='profedit'),
-    path('profcrt',views.createFn,name='profcrt')
+    path('profcrt',views.createFn,name='profcrt'),
+    path('eventdash',views.evedashFn,name='eventdash'),
+    path('eventpay',views.evepayFn,name='eventpay'),
+    path('eventcust',views.evecustFn,name='eventcust')
 ]

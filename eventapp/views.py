@@ -10,4 +10,10 @@ def finishFn(request):
 def editFn(request):
     return render(request,'profedit.html')     
 def createFn(request):
-    return render(request,'profcrt.html')         
+    return render(request,'profcrt.html')    
+def evedashFn(request):
+    return render(request,'eventdash.html')     
+def evepayFn(request):
+    return render(request,'eventpay.html')           
+def evecustFn(request):
+    return render(request,'eventcust.html')                             

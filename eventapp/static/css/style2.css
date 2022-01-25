@@ -1,6 +1,6 @@
 body {
     background: #fafafa;
-    font-family: 'Ubuntu',sans-serif;
+    font-family:'Ubuntu',sans-serif;
 }
 
 p {
@@ -187,6 +187,19 @@ table .pending{
     border: none;
     color: red;
     background-color: white;
+
+}table .active{
+    background-color: #3cc47c;
+    color: white;
+}
+table .inactive{
+    background-color: #e9b000;
+    color: white;
+}
+button{
+    border: 1px solid ;
+    border-radius: 4px;
+
 }
 
 
@@ -327,3 +340,50 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
     border-color: rgba(24,28,33,0.03) !important;
 }
 
+
+/* dashboard  */
+
+
+
+.order-card {
+    color: rgb(71, 140, 161);
+}
+.order-card:hover{
+    background-color: #FF645A;
+    color: white;
+}
+
+
+.order-card {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all .5s ease;
+}
+.order-card:hover{
+    transform: scale(1.05);
+}
+
+.order-card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+.card i{
+    font-size: 44px;
+}
+.card span{
+    font-size: 40px;
+}

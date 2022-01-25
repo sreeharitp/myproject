@@ -1,76 +1,59 @@
 {% extends 'master1.html' %}
 {% load static %}
 {% block content %}
-<section>
-  <div class="row">
-    <div class="home-img">
-      <img src="{% static 'image/pic11.jpg' %}" class="img-fluid" alt="...">
-      <h1>Find your best event partner..</h1>
-      <div class="col-md-6 mb-4 max-width">
-        <div class="input-group md-form form-sm form-2 pl-0">
-          <input class="form-control my-0 py-1 amber-border" type="text"
-            placeholder="Search for Event teams , Locations..." aria-label="Search">
-          <div class="input-group-append">
-            <span class="input-group-text amber" id="basic-text1"><i class="fa fa-search text-grey"
-                aria-hidden="true"></i></span>
-          </div>
-        </div>
 
-      </div>
+<div class="row home-row">
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-4">Find your best event partner...</h1>
     </div>
-  </div>
-  <hr class="one">
-  <h2>Services</h2>
-  <hr class="two">
-  <div class="container">
-  <div class="carousel mx-auto">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-lg-6 col-md-4 col-10 color text-center">
-              <p>Event Planning</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-10">
-              <img src="{% static 'image/caro1.jpg' %}" class="img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item e">
-          <div class="row">
-            <div class="col-lg-6 col-md-4 col-10 color text-center">
-              <p>Design & Decor</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-10">
-              <img src="{% static 'image/caro2.jpg' %}" class="img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="row">
-            <div class="col-lg-6 col-md-4 col-10 color text-center">
-              <p>Food & Catering</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-10">
-              <img src="{% static 'image/caro3.jpg' %}" class="img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="row">
-            <div class="col-lg-6 col-md-4 col-10 color text-center">
-              <p>Wedding Photography</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-10">
-              <img src="{% static 'image/caro4.jpg' %}" class="img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-  <hr class="three">
+</div>
+<hr class="one">
+<h2>Services</h2>
+<hr class="two">
+<div class="row services ">
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto text-center" style="width: 16rem;">
+      <div class="card-body">
+        <p><i class="fas fa-calendar-week"></i></p>
+        <h5 class="card-title">Event Planning</h5>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto text-center" style="width: 16rem;">
+      <div class="card-body">
+        <p><i class="fas fa-holly-berry"></i></p>
+        <h5 class="card-title">Design & Decor</h5>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto text-center" style="width: 16rem;">
+      <div class="card-body">
+        <p><i class="fas fa-utensils"></i></p>
+        <h5 class="card-title">Food & Catering</h5>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto text-center" style="width: 16rem;">
+      <div class="card-body">
+        <p><i class="fas fa-camera"></i></p>
+        <h5 class="card-title">Photography</h5>
+      </div>
+    </div>
+
+  </div>
+  
+
+</div>
+ 
+<hr class="three">
   <h2>Event Teams</h2>
   <hr class="four">
   <div class="cards">
@@ -164,17 +147,17 @@
       </div>
 
     </div>
-  </div>
-    <!-- <div class="container p-5">
+  </div> 
+<!-- <div class="container p-5">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Fluid jumbotron</h1>
       <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     </div>
   </div>
-</div> -->
+</div>
 
-</section>
+
 
 
 

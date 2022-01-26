@@ -3,8 +3,8 @@
 {% block content %}
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-3 col-md-12 col-12 mt-5 mb-5 ver-filter">
+  <div class="row filter-row">
+    <div class="col-lg-3 col-md-10 col-12 mt-5 mb-5 ver-filter">
       <div id="filter">
         <div class="border-bottom pb-2 ml-2">
           <h4 class="mt-3" id="">Filters</h4>
@@ -36,127 +36,120 @@
       </div>
 
     </div>
-    <div class="col-lg-8 col-md-12 col-12 hori-line">
-      <div class="results">
-        <h6>101 Results</h6>
-      </div>
-      <div class="hori-card p-5">
-        <a href="userhome3">
-          <div class="card border-0 mb-3" style="max-width:750px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="{% static 'image/hori1.jpg' %}" class="img-fluid" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body p-2">
-                  <h5>E4 Events </h5>
-                  <p class="card-text m-0" style="font-size: 14px;">Manjeri , Malappuram</p>
-                  <p class="card-text m-0"><small class="text-muted">
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star text-warning"></i>
-                      <i class="fa fa-star-half text-warning"></i>
-                      4.5 (18,560)</small>
-                  </p>
-                  <div class="book-btn text-right">
-                    <button>Book now</button>
-                  </div>
-                </div>
+    <div class="col-lg-8 col-md-12 col-12 p-5 hori-card">
+      <h6 class="pl-5 pb-2 pt-2">101 Results</h6>
+      <div class="card" style="max-width:750px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{% static 'image/hori1.jpg' %}" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body p-2">
+              <h5>E4 Events </h5>
+              <p class="card-text m-0" style="font-size: 14px;">Manjeri , Malappuram</p>
+              <p class="card-text m-0"><small class="text-muted">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half text-warning"></i>
+                  4.5 (18,560)</small>
+              </p>
+              <div class="book-btn text-right">
+                <button>Book now</button>
               </div>
             </div>
           </div>
-        </a>
-        <hr>
-        <div class="card border-0 mb-3" style="max-width: 750px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="{% static 'image/hori2.jpg' %}" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body p-2">
-                <h5>Royal Events </h5>
-                <p class="card-text m-0" style="font-size: 14px;">Edapally, Kochi</p>
-                <p class="card-text m-0"><small class="text-muted">
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star-half text-warning"></i>
-                    4.5 (18,560)</small>
-                </p>
-                <div class="book-btn text-right">
-                  <button>Book now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="card border-0 mb-3" style="max-width: 750px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="{% static 'image/hori3.jpg' %}" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body p-2">
-                <h5>Elegant Events </h5>
-                <p class="card-text m-0" style="font-size: 14px;">Calicut city, Calicut</p>
-                <p class="card-text m-0"><small class="text-muted">
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star-half text-warning"></i>
-                    4.5 (18,560)</small>
-                </p>
-                <div class="book-btn text-right">
-                  <button>Book now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="card border-0 mb-3" style="max-width: 750px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="{% static 'image/hori4.jpg' %}" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body p-2">
-                <h5>Max Caterers </h5>
-                <p class="card-text m-0" style="font-size: 14px;">Kannut city , Kannur</p>
-                <p class="card-text m-0"><small class="text-muted">
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star text-warning"></i>
-                    <i class="fa fa-star-half text-warning"></i>
-                    4.5 (18,560)</small>
-                </p>
-                <div class="book-btn text-right">
-                  <button>Book now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><button type="button" class="btn"><i class="fa fa-chevron-left"></i>
-                  Previous</button></li>
-              <li class="page-item"><button type="button" class="btn">1</button></li>
-              <li class="page-item"><button type="button" class="btn">2</button></li>
-              <li class="page-item"><button type="button" class="btn">3</button></li>
-              <li class="page-item"><button type="button" class="btn">4</button></li>
-              <li class="page-item"><button type="button" class="btn">Next <i class="fa fa-chevron-right"></i></button>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
+      <hr>
+      <div class="card" style="max-width: 750px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{% static 'image/hori2.jpg' %}" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body p-2">
+              <h5>Royal Events </h5>
+              <p class="card-text m-0" style="font-size: 14px;">Edapally, Kochi</p>
+              <p class="card-text m-0"><small class="text-muted">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half text-warning"></i>
+                  4.5 (18,560)</small>
+              </p>
+              <div class="book-btn text-right">
+                <button>Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="card" style="max-width: 750px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{% static 'image/hori3.jpg' %}" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body p-2">
+              <h5>Elegant Events </h5>
+              <p class="card-text m-0" style="font-size: 14px;">Calicut city, Calicut</p>
+              <p class="card-text m-0"><small class="text-muted">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half text-warning"></i>
+                  4.5 (18,560)</small>
+              </p>
+              <div class="book-btn text-right">
+                <button>Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="card" style="max-width: 750px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{% static 'image/hori4.jpg' %}" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body p-2">
+              <h5>Max Caterers </h5>
+              <p class="card-text m-0" style="font-size: 14px;">Kannut city , Kannur</p>
+              <p class="card-text m-0"><small class="text-muted">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half text-warning"></i>
+                  4.5 (18,560)</small>
+              </p>
+              <div class="book-btn text-right">
+                <button>Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-auto">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><button type="button" class="btn"><i class="fa fa-chevron-left"></i>
+              Previous</button></li>
+          <li class="page-item"><button type="button" class="btn">1</button></li>
+          <li class="page-item"><button type="button" class="btn">2</button></li>
+          <li class="page-item"><button type="button" class="btn">3</button></li>
+          <li class="page-item"><button type="button" class="btn">Next <i class="fa fa-chevron-right"></i></button>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>

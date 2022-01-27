@@ -1,6 +1,9 @@
 body{
   font-family: 'Ubuntu',sans-serif;
 }
+.eve-prof{
+  padding: 0;
+}
 .eve-prof .row{
   margin: 0;
   padding: 0;
@@ -330,6 +333,11 @@ h2{
     height: 188px;
     width: 249px;
   }
+  @media (max-width: 576px) {
+    .hori-card img{
+      height: 165px;
+    }
+  }
   .results{
     width: 846px;
     height: 50px;
@@ -346,19 +354,6 @@ h2{
     font-size: 15px;
     font-weight: 500;
   }
-
-
-  /* side-bar */
-  .ver-filter{
-    background-color: #f3f3f3;
-  }
-  .filter-row{
-    margin: 0;
-  }
-
-  /* hori-cards */
-
-
   .hori-card .card{
     border: none;
     margin: 20px 30px 20px 30px;
@@ -372,6 +367,19 @@ h2{
     width: 100px;
     margin: 50px 20px 0 0;
   }
+
+  
+
+  /* side-bar */
+  .ver-filter{
+    background-color: #f3f3f3;
+  }
+  .filter-row{
+    margin: 0;
+  }
+
+
+  
 
   /* profile */
 
@@ -408,6 +416,11 @@ h2{
   .navbar2 a:hover {
     color:  #04AA6D;
     border-bottom: 4px solid  #04AA6D;
+  }
+  @media (max-width: 576px) {
+    .navbar2 a{
+      font-size: 11px;
+    }
   }
   .single_portfolio_text{
     display:inline-block;

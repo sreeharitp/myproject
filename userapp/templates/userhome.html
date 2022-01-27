@@ -3,14 +3,26 @@
 {% block content %}
 
 <div class="row home-row">
-    <div class="jumbotron jumbotron-fluid text-center">
-      <div class="container">
-        <h1 class="display-4">Find your best event partner...</h1>
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">Find your best event partner...</h1>
+      <div class="container pt-5">
+        <div class="search">
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div>
+                <div class="search-2"> <i class='bx bxs-map'></i> <input type="text" placeholder="Search Teams , Locations.....">
+                  <button>Search</button> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 <hr class="one">
-<h2>Services</h2>
+<h2 class="home-h2">Services</h2>
 <hr class="two">
 <div class="row services ">
   <div class="col-lg-3 col-md-6 col-12">
@@ -49,115 +61,102 @@
     </div>
 
   </div>
-  
+
 
 </div>
- 
-<hr class="three">
-  <h2>Event Teams</h2>
-  <hr class="four">
-  <div class="cards">
-    <div class="text-right mr-5 mt-3 pr-3 pt-3">
-      <a class="seeall" href="userhome2">
-        <h6>See all</h6>
-      </a>
-    </div>
-    <div class="row pt-3 pb-5 pr-5 pl-5 mx-auto">
-      <div class="col-lg-3 col-md-6 col-12 mx-auto">
-        <a href="userhome3">
-          <div class="card" style="width: 16rem;">
-            <img src="{% static 'image/event1.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body p-3">
-              <h5>E4 Events </h5>
-              <p class="card-text m-0" style="font-size: 14px;">Manjeri , Malappuram</p>
-              <p class="card-text m-0"><small class="text-muted">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half text-warning"></i>
-                  4.5 (18,560)</small>
-              </p>
-              <div class="book-btn text-center pt-3 mb-2">
-                <button>Book now</button>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mx-auto">
-        <div class="card" style="width: 16rem;">
-          <img src="{% static 'image/event2.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body p-3">
-            <h5>Royal Events</h5>
-            <p class="card-text m-0" style="font-size: 14px;">Edapally , Kochi</p>
-            <p class="card-text m-0"><small class="text-muted">
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star-half text-warning"></i>
-                4.5 (18,560)</small>
-            </p>
-            <div class="book-btn text-center pt-3 mb-2">
-              <a href="userhome3"><button>Book now</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mx-auto">
-        <div class="card" style="width: 16rem;">
-          <img src="{% static 'image/event3.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body p-3">
-            <h5>Elegant Events </h5>
-            <p class="card-text m-0" style="font-size: 14px;">Calicut city, Calicut</p>
-            <p class="card-text m-0"><small class="text-muted">
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star-half text-warning"></i>
-                4.5 (18,560)</small>
-            </p>
-            <div class="book-btn text-center pt-3 mb-2">
-              <a href="userhome3"><button>Book now</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mx-auto">
-        <div class="card" style="width: 16rem;">
-          <img src="{% static 'image/event4.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body p-3">
-            <h5>Maxx Caterers </h5>
-            <p class="card-text m-0" style="font-size: 14px;">Kannur City , Kannur</p>
-            <p class="card-text m-0"><small class="text-muted">
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star-half text-warning"></i>
-                4.5 (18,560)</small>
-            </p>
-            <div class="book-btn text-center pt-3 mb-2">
-              <a href="userhome3"><button>Book now</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
 
+<hr class="three">
+<h2 class="home-h2">Event Teams</h2>
+<hr class="four">
+<div class="row home-card">
+  <div class="row seeall w-100">
+    <h6>See all</h6>
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto " style="width: 16rem;">
+      <img src="{% static 'image/event1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body p-3">
+        <h5>E4 Events </h5>
+        <p class="card-text m-0" style="font-size: 14px;">Manjeri , Malappuram</p>
+        <p class="card-text m-0"><small class="text-muted">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star-half text-warning"></i>
+            4.5 (18,560)</small>
+        </p>
+        <div class="book-btn text-center pt-3 mb-2">
+          <button>Book now</button>
+        </div>
+      </div>
     </div>
-  </div> 
-<!-- <div class="container p-5">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto" style="width: 16rem;">
+      <img src="{% static 'image/event2.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body p-3">
+        <h5>Royal Events</h5>
+        <p class="card-text m-0" style="font-size: 14px;">Edapally , Kochi</p>
+        <p class="card-text m-0"><small class="text-muted">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star-half text-warning"></i>
+            4.5 (18,560)</small>
+        </p>
+        <div class="book-btn text-center pt-3 mb-2">
+          <a href="userhome3"><button>Book now</button></a>
+        </div>
+      </div>
     </div>
+
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto" style="width: 16rem;">
+      <img src="{% static 'image/event3.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body p-3">
+        <h5>Elegant Events </h5>
+        <p class="card-text m-0" style="font-size: 14px;">Calicut city, Calicut</p>
+        <p class="card-text m-0"><small class="text-muted">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star-half text-warning"></i>
+            4.5 (18,560)</small>
+        </p>
+        <div class="book-btn text-center pt-3 mb-2">
+          <a href="userhome3"><button>Book now</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card mx-auto" style="width: 16rem;">
+      <img src="{% static 'image/event4.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body p-3">
+        <h5>Maxx Caterers </h5>
+        <p class="card-text m-0" style="font-size: 14px;">Kannur City , Kannur</p>
+        <p class="card-text m-0"><small class="text-muted">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star-half text-warning"></i>
+            4.5 (18,560)</small>
+        </p>
+        <div class="book-btn text-center pt-3 mb-2">
+          <a href="userhome3"><button>Book now</button></a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
-
-
 
 
 

@@ -2,66 +2,73 @@
 {% load static %}
 {% block content %}
 
-    <div class="row cont-img text-center mx-auto">
-        <img src="{% static 'image/cont1.jpg' %}" class="img-fluid" alt="...">
-        <h2>Contact Us</h2>
-    </div>
+<div class="jumbotron jumbotron-fluid w-100 cont-img text-center">
     <div class="container">
-        <div class="contact__wrapper shadow-lg mt-n9">
-            <div class="row no-gutters">
-                <div class="col-lg-6 contact-form__wrapper p-5 order-lg-1">
-                    <form action="#" class="contact-form form-validate" novalidate="novalidate">
-                        <div class="row">
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <label class="required-field" for="firstName">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="">
-                                </div>
+      <h2>Contact Us</h2>
+    </div>
+  </div>
+<div class="container">
+    <div class="contact__wrapper shadow-lg mt-n9">
+        <div class="row no-gutters">
+            <div class="col-lg-6 contact-form__wrapper p-5 order-lg-1">
+                <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <label class="required-field" for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="">
                             </div>
-        
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <label for="lastName">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="">
-                                </div>
-                            </div>
-        
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <label class="required-field" for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" name="email" placeholder="">
-                                </div>
-                            </div>
-        
-                            <div class="col-sm-6 mb-3">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="">
-                                </div>
-                            </div>
-        
-                            <div class="col-sm-12 mb-3">
-                                <div class="form-group">
-                                    <label class="required-field" for="message">How can we help?</label>
-                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder=""></textarea>
-                                </div>
-                            </div>
-        
-                            <div class="col-sm-12 mb-3">
-                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                            </div>
-        
                         </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 p-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31317.73961234576!2d76.05542553780315!3d11.134408370791451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1639500465469!5m2!1sen!2sin" width="500" height="350" style="border:0;" loading="lazy"></iframe>
-                </div>
-                <!-- End Contact Form Wrapper -->
-        
+
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <label class="required-field" for="email">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 mb-3">
+                            <div class="form-group">
+                                <label class="required-field" for="message">How can we help?</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"
+                                    placeholder=""></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 mb-3">
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
+            <div class="col-lg-6 p-5">
+                <div class="iframe-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31317.73961234576!2d76.05542553780315!3d11.134408370791451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1639500465469!5m2!1sen!2sin"
+                        style="border:0;" loading="lazy"></iframe>
+
+                </div>
+            </div>
+            <!-- End Contact Form Wrapper -->
+
         </div>
     </div>
+</div>
 
 
 

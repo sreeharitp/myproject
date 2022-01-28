@@ -6,13 +6,15 @@
   <div class="jumbotron jumbotron-fluid text-center">
     <div class="container">
       <h1 class="display-4">Find your best event partner...</h1>
-      <div class="container pt-5">
+      <div class="container pt-3">
         <div class="search">
           <div class="row">
             <div class="col-md-12 p-0">
               <div>
-                <div class="search-2"> <i class='bx bxs-map'></i> <input type="text" placeholder="Search Teams , Locations.....">
-                  <button>Search</button> </div>
+                <div class="search-2"> <i class='bx bxs-map'></i> <input type="text"
+                    placeholder="Search Teams , Locations.....">
+                  <button>Search</button>
+                </div>
               </div>
             </div>
           </div>
@@ -21,12 +23,12 @@
     </div>
   </div>
 </div>
-<hr class="one">
-<h2 class="home-h2">Services</h2>
-<hr class="two">
 <div class="row services ">
+  <div class="row ser-h2">
+    <h3>Services</h3>
+  </div>
   <div class="col-lg-3 col-md-6 col-12">
-    <div class="card mx-auto text-center" style="width: 16rem;">
+    <div class="card mx-auto text-center" style="width: 14rem; height: 13rem;">
       <div class="card-body">
         <p><i class="fas fa-calendar-week"></i></p>
         <h5 class="card-title">Event Planning</h5>
@@ -35,7 +37,7 @@
 
   </div>
   <div class="col-lg-3 col-md-6 col-12">
-    <div class="card mx-auto text-center" style="width: 16rem;">
+    <div class="card mx-auto text-center" style="width: 14rem;height: 13rem;">
       <div class="card-body">
         <p><i class="fas fa-holly-berry"></i></p>
         <h5 class="card-title">Design & Decor</h5>
@@ -44,7 +46,7 @@
 
   </div>
   <div class="col-lg-3 col-md-6 col-12">
-    <div class="card mx-auto text-center" style="width: 16rem;">
+    <div class="card mx-auto text-center" style="width: 14rem;height: 13rem;">
       <div class="card-body">
         <p><i class="fas fa-utensils"></i></p>
         <h5 class="card-title">Food & Catering</h5>
@@ -53,24 +55,20 @@
 
   </div>
   <div class="col-lg-3 col-md-6 col-12">
-    <div class="card mx-auto text-center" style="width: 16rem;">
+    <div class="card mx-auto text-center" style="width: 14rem;height: 13rem;">
       <div class="card-body">
         <p><i class="fas fa-camera"></i></p>
         <h5 class="card-title">Photography</h5>
       </div>
     </div>
-
   </div>
-
-
 </div>
-
-<hr class="three">
-<h2 class="home-h2">Event Teams</h2>
-<hr class="four">
 <div class="row home-card">
   <div class="row seeall w-100">
-    <h6>See all</h6>
+    <h3 class="home-h2">Event Teams</h3>
+    <a href="userhome2">
+      <h6>See all</h6>
+    </a>
   </div>
   <div class="col-lg-3 col-md-6 col-12">
     <div class="card mx-auto " style="width: 16rem;">
@@ -157,8 +155,15 @@
 
   </div>
 </div>
+<div class="row eve-reg" id="evereg">
+  <div class="jumbotron jumbotron-fluid mx-auto text-center">
+    <div class="container">
+      <h3>Event teams register here</h3>
+      <a href=""><button class="btn btn-danger">Register</button></a>
+    </div>
+  </div>
 
-
+</div>
 
 
 {% endblock %}

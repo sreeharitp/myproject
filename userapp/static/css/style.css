@@ -1,5 +1,6 @@
 body{
   font-family: 'Ubuntu',sans-serif;
+  margin: 0;
 }
 .eve-prof{
   padding: 0;
@@ -9,15 +10,6 @@ body{
   padding: 0;
   width: 100%;
 }
-.home-h2{
-  padding-left: 7%;
-}
-@media (max-width:576px){
-  .home-h2{
-    padding-left: 30%;
-  }
-}
-
 /* header */
 
 
@@ -71,11 +63,9 @@ body{
 /* login-register-modal */
 
 .login .modal-content{
-  height: 380px;
   width: 360px;
 }
 .register .modal-content{
-  height: 460px;
   width: 390px;
 }
 .modal .btn{
@@ -114,35 +104,31 @@ body{
 .home-row h1{
   font-weight: 500;
   margin-top: 50px;
-  font-size:70px;
+  font-size:55px;
 }
 @media (max-width:576px){
   .home-row h1{
     font-size: 54px;
   }
 }
+.eve-reg .jumbotron{
+  width: 60%;
+  padding: 2rem 2rem;
+  margin:5rem 3rem;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0,0,0.1,0.4),rgba(0,0,0.1,0.4)),url(../image/jum2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  
+}
 
 
 
 /* body */
 
-hr{
-  height: 2px;
-}
-.one{
-  margin:15px 50px 15px 50px;
- 
-}
-.two{
- margin: 20px 50px 20px 50px;
-}
-.three{
-  margin: 40px 50px 15px 50px;
- 
-}
-.four{
- margin: 20px 50px 30px 50px;
-}
+
 
 /* footer */
 
@@ -298,7 +284,8 @@ hr{
 
   /* home-cards */
   .home-card{
-    background-color: #f3f3f3;
+    background-color: #f1f2f3;
+    padding:3% 5% 5% 5%;
 
   }
    .home-card button{
@@ -328,34 +315,40 @@ hr{
   }
   .home-card .card{
     overflow: hidden;
-    margin: 30px;
     border: none;
+    margin-bottom: 6%;
   }
-  .seeall h6{
-    padding:20px 0px 0px 90%;
-    margin: 0;
+  .seeall h3{
+    margin-bottom: 1rem;
   }
-  @media (max-width:576px){
-    .seeall h6{
-      padding-left: 75%;
-    }
-  }
-
+ .seeall{
+   display: flex;
+   align-items: stretch;
+   justify-content: space-between;
+   padding: 0 2% 0 2%;
+ }
+ .seeall a{
+   text-decoration: none;
+   color: #8a8989;
+ }
 
   /*home- service */
 
   .services{
    margin: 0;
    justify-content: center;
+   padding:3% 5% 5% 5%;
+  }
+  .ser-h2{
+    margin: 0 2% 4% 2%;
+    border-bottom: 1px solid #e2e1e1;
   }
   .services .card{
     margin: 30px;
     background-image: url();
     border: none;
     border-radius: 10px;
-  }
-  .services .card:hover{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   }
   .services p{
     color: black;
@@ -599,7 +592,7 @@ td {
 }
 
 ::placeholder {
-  color: #f3f3f3;
+  color: #9e9c9c;
   opacity: 1
 }
 

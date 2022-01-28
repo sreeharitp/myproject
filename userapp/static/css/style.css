@@ -321,6 +321,11 @@ body{
   .seeall h3{
     margin-bottom: 1rem;
   }
+  @media (max-width:576px){
+    .seeall h3{
+      padding-left: 20%;
+    }
+  }
  .seeall{
    display: flex;
    align-items: stretch;
@@ -330,7 +335,13 @@ body{
  .seeall a{
    text-decoration: none;
    color: #8a8989;
+   font-size: 16px;
  }
+ @media (max-width:576px){
+  .seeall a{
+   font-size: 13px;
+  }
+}
 
   /*home- service */
 
@@ -354,6 +365,12 @@ body{
     color: black;
     font-size: 60px;
   }
+  @media (max-width:576px){
+    .services h3{
+      padding-left: 30%;
+    }
+  }
+
   
 
 

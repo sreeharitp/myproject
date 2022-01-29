@@ -15,5 +15,4 @@ def evedashFn(request):
     return render(request,'eventdash.html')     
 def evepayFn(request):
     return render(request,'eventpay.html')           
-def evecustFn(request):
-    return render(request,'eventcust.html')                             
+                           

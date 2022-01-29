@@ -8,5 +8,7 @@ urlpatterns =[
     path('adminpay',views.payFn,name='adminpay'),
     path('adminrating',views.rateFn,name='adminrating'),
     path('addteam',views.addFn,name='addteam'),
-    path('custview',views.viewFn,name='custview')
+    path('custview',views.viewFn,name='custview'),
+    path('request',views.reqFn,name='request')
+
 ]

@@ -13,3 +13,5 @@ def aboutFn(request):
     return render(request,'aboutus.html')
 def contactFn(request):
     return render(request,'contactus.html')        
+def regFn(request):
+    return render(request,'evereg.html')            

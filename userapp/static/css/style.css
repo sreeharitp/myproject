@@ -112,8 +112,8 @@ body{
   }
 }
 .eve-reg .jumbotron{
-  width: 60%;
-  padding: 2rem 2rem;
+  width: 80%;
+  padding: 4em 4rem;
   margin:5rem 3rem;
   border-radius: 10px;
   background-image: linear-gradient(rgba(0,0,0.1,0.4),rgba(0,0,0.1,0.4)),url(../image/jum2.jpg);
@@ -288,6 +288,10 @@ body{
     padding:3% 5% 5% 5%;
 
   }
+  .home-card a{
+    text-decoration: none;
+    color: black;
+  }
    .home-card button{
     border: 1px solid;
     background-color:#FF645A ;
@@ -295,10 +299,6 @@ body{
     border-radius: 3px;
     height: 33px;
     width: 100px;
-  }
-   .home-card .card a{
-    color: black;
-    text-decoration: none;
   }
   .home-card .card .seeall{
     text-decoration: none;
@@ -315,7 +315,7 @@ body{
   }
   .home-card .card{
     overflow: hidden;
-    border: none;
+    border: 1px solid #e2e2e2;
     margin-bottom: 10%;
   }
   .seeall h3{
@@ -602,6 +602,10 @@ td {
   background-color: #f3f3f3;
 }
 
+
+/* home-searchbar  */
+
+
 .search {
   background-color: #fff;
   padding: 4px;
@@ -668,3 +672,16 @@ td {
   }
 }
 
+
+
+/* event-registration  */
+
+.eve-cont{
+  background-color: rgb(238, 247, 252);
+}
+.eve-piv{
+  background: linear-gradient(90deg,rgba(47,45,65,.9),rgba(47,45,65,.7));
+}
+.eve-reg{
+  padding: 6% 3%;
+}

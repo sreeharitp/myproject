@@ -1,0 +1,95 @@
+{% extends 'master1.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container">
+    <div class="row eve-reg">
+        <div class="col-lg-6 pl-0 pr-0 eve-pic">
+            <img src="{% static 'image/reg1.jpeg' %}" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-lg-6 pl-0 pr-0 eve-cont bg-light">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="card border-0">
+                    <div class="card-body bg-light">
+                        <form action="" id="everegform">
+                        <div class="row gutters">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <h6 class="mb-3 text-primary">Team Details</h6>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Event Name</label>
+                                    <input type="text" class="form-control" name="eventname" placeholder="Enter full name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Owner Name</label>
+                                    <input type="text" class="form-control" name="ownername" placeholder="Enter full name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control" name="phone" placeholder="Enter phone number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter email ID">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row gutters">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <h6 class="mt-2 mb-3 text-primary">Address</h6>
+                            </div>
+                            <div class=" col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label >Street</label>
+                                    <input type="name" class="form-control" name="street" placeholder="Enter Street">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6  col-12">
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="name" class="form-control" name="city" placeholder="Enter City">
+                                </div>
+                            </div>
+                            <div class=" col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>State</label>
+                                    <input type="text" class="form-control" name="state" placeholder="Enter State">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gutters">
+                            <div class=" col-lg-12 col-md-12 col-12">
+                                <div class="text-center mt-5">
+                                    <button type="button" id="submit" name="submit" class="btn btn-primary">Send
+                                        Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

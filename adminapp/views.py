@@ -16,4 +16,6 @@ def rateFn(request):
 def addFn(request):
     return render(request,'addteam.html')           
 def viewFn(request):
-    return render(request,'custview.html')               
+    return render(request,'custview.html')     
+def reqFn(request):
+    return render(request,'request.html')                   

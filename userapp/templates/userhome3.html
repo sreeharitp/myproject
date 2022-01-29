@@ -281,10 +281,10 @@
 
           </div>
         </div>
-        <div class="bookbtn text-center">
-          <button class="btn btn-danger m-2">Check Here</button>
+        <div class="text-center">
+          <button class="btn btn-danger m-2" id="bookbtn">Check Here</button>
         </div>
-        <div class="booked">
+        <div id="booked" hidden>
           <div class="col-md-12 pt-3">
             <div class="form-group">
               <span class="form-label">Name</span>
@@ -326,9 +326,9 @@
 <script>
 
 
-  // $('.bookbtn').click(function(){
-  //   $('.booked').show()
-  // })
+  $('#bookbtn').click(function(){
+    $('#booked').show()
+  })
 
 
 </script>

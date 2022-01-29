@@ -1,6 +1,9 @@
 body{
     font-family: 'Ubuntu',sans-serif;
 }
+.row{
+    margin: 0;
+}
 .nav1{
     height: 70px;
     padding: 0 35px 0 35px;

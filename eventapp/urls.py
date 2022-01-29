@@ -7,6 +7,5 @@ urlpatterns = [
     path('profedit',views.editFn,name='profedit'),
     path('profcrt',views.createFn,name='profcrt'),
     path('eventdash',views.evedashFn,name='eventdash'),
-    path('eventpay',views.evepayFn,name='eventpay'),
-    path('eventcust',views.evecustFn,name='eventcust')
+    path('eventpay',views.evepayFn,name='eventpay')
 ]

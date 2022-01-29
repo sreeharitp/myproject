@@ -1,0 +1,41 @@
+{% extends 'master2.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row table1 p-3">
+    <div class="col-lg-6 col-md-6 col-8 p-0">
+      <div class="my-auto">
+        <h3>Requests</h3>
+      </div>
+    </div>
+    <div class="w-100 text-center pt-4">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address</th>
+            <th scope="col">Approval</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>E4 events</td>
+            <td>Sreehari</td>
+            <td>8086643724</td>
+            <td>Malappuram</td>           
+            <td><button class="edit">Accept</button><button class="delete">Reject</button></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

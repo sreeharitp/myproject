@@ -68,6 +68,9 @@ body{
 .register .modal-content{
   width: 390px;
 }
+.register .form-group{
+  margin-bottom: 5px;
+}
 .modal .btn{
   background-color: #FF645A;
   border: #FF645A;

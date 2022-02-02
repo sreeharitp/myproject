@@ -50,9 +50,6 @@
             <li class="nav-item">
               <a class="nav-link" href="contactus">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#evereg">Event Register</a>
-            </li>
           </ul>
           <button type="button" class="btn login" data-toggle="modal" data-target="#loginmodal">Log In</button>
           <button type="button" class="btn login" data-toggle="modal" data-target="#registermodal">Sign Up</button>
@@ -166,7 +163,7 @@
         <div class="modal-body">
           <form id="regform">
             <div class="form-group">
-              <div class="row ">
+              <div class="row">
                 <div class="col p-1"><input type="text" class="form-control" name="first_name" placeholder="First Name">
                 </div>
                 <div class="col p-1"><input type="text" class="form-control" name="last_name" placeholder="Last Name">
@@ -191,7 +188,7 @@
               <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
             </div>
             <div class="form-group">
-              <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms
+              <label class="form-check-label"><input type="checkbox"> I accept the <a href="#">Terms
                   of Use</a> &amp; <a href="#">Privacy Policy</a></label>
             </div>
             <div class="form-group text-center">
@@ -261,7 +258,7 @@
                 maxlength: 10,
               },
               place:{
-                required:true,
+                required:true
               },
               password: {
                 required: true,
@@ -274,8 +271,8 @@
             },
             messages: {
               email: {
-                required: "*Please enter email address",
-                email: "*Please enter a valid email address.",
+                required: "Please enter email address",
+                email: "Please enter a valid email address.",
               },
               password: {
                 required: '*This field is required',
@@ -317,8 +314,8 @@
             },
             messages: {
               email: {
-                required: "*Please enter email address",
-                email: "*Please enter a valid email address.",
+                required: "Please enter email address",
+                email: "Please enter a valid email address.",
               },
               message: {
                 required: "Type something..."
@@ -336,10 +333,10 @@
           $('#everegform').validate({
             rules: {
               eventname: {
-                required: true,
+                required: true
               },
               ownername: {
-                required: true,
+                required: true
               },
               phone: {
                 required: true,
@@ -364,8 +361,8 @@
             },
             messages: {
               email: {
-                required: "*Please enter email address",
-                email: "*Please enter a valid email address.",
+                required: "Please enter email address",
+                email: "Please enter a valid email address.",
               },
             },
             submitHandler: function (form) {
@@ -374,6 +371,7 @@
 
           });
 
+         
 
 
         </script>

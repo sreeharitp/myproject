@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&family=Ubuntu:wght@400;500;700&family=Akaya+Telivigala&display=swap"
     rel="stylesheet">
 </head>
 
@@ -29,7 +29,7 @@
 
 
     <div class="row">
-      <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+      <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
         <a class="navbar-brand" href="userhome">Evento.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
               <a class="nav-link" href="contactus">Contact Us</a>
             </li>
           </ul>
-          <button type="button" class="btn login" data-toggle="modal" data-target="#loginmodal">Log In</button>
+          <button type="button" class="btn login my-auto" data-toggle="modal" data-target="#loginmodal">Log In</button>
           <button type="button" class="btn login" data-toggle="modal" data-target="#registermodal">Sign Up</button>
         </div>
       </nav>
@@ -188,8 +188,10 @@
               <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
             </div>
             <div class="form-group">
+             <small>
               <label class="form-check-label"><input type="checkbox"> I accept the <a href="#">Terms
-                  of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+             </small>
             </div>
             <div class="form-group text-center">
               <button class="btn btn-primary btn-md" type="submit">Sign Up</button>

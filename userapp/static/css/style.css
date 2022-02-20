@@ -1,6 +1,7 @@
 body{
   font-family: 'Ubuntu',sans-serif;
   margin: 0;
+  background-color: #f1f2f38c;
 }
 .eve-prof{
   padding: 0;
@@ -23,6 +24,7 @@ body{
   height: 38px;
   font-weight: bold;
   color: #FF645A ;
+  background-color: white;
   margin:15px 10px;
 }
 .navbar .login:hover{
@@ -45,9 +47,10 @@ body{
   padding: 0 15px;
   height: 80px;
   line-height: 80px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   color: #FF645A;
+  font-family: 'Akaya Telivigala';
 }
 
 @media (min-width: 768px) {
@@ -99,10 +102,11 @@ body{
 .home-row .jumbotron{
   width: 100%;
  height: 500px;
-  background-image: linear-gradient(rgba(0,0,0.1,0.4),rgba(0,0,0.1,0.4)),url(../image/homeimg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.418)),url(../image/homeimg.jpg);
   background-size: cover;
   background-position: center;
   color: white;
+  margin-bottom: 0;
 }
 .home-row h1{
   font-weight: 500;
@@ -287,8 +291,8 @@ body{
 
   /* home-cards */
   .home-card{
-    background-color: #f1f2f3;
     padding:3% 5% 5% 5%;
+    background-color: #f1f2f3d4;
 
   }
   .home-card a{
@@ -300,8 +304,8 @@ body{
     background-color:#FF645A ;
     color: white;
     border-radius: 3px;
-    height: 33px;
-    width: 100px;
+    height: 40px;
+    width: 220px;
   }
   .home-card .card .seeall{
     text-decoration: none;
@@ -318,8 +322,8 @@ body{
   }
   .home-card .card{
     overflow: hidden;
-    border: 1px solid #e2e2e2;
     margin-bottom: 10%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   }
   .seeall h3{
     margin-bottom: 1rem;
@@ -351,7 +355,9 @@ body{
   .services{
    margin: 0;
    justify-content: center;
-   padding:3% 5% 5% 5%;
+   padding:4% 5% 5% 5%;
+   background-color: white;
+   
   }
   .ser-h2{
     margin: 0 2% 4% 2%;
@@ -363,6 +369,7 @@ body{
     border: none;
     border-radius: 10px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    background-color: #f1f2f3d4;
   }
   .services p{
     color: black;
@@ -387,6 +394,7 @@ body{
   .hori-card img{
     height: 188px;
     width: 249px;
+    border-radius: 5px 0 0 5px;
   }
   @media (max-width: 576px) {
     .hori-card img{
@@ -412,6 +420,8 @@ body{
   .hori-card .card{
     border: none;
     margin: 20px 30px 20px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   }
   .hori-card .book-btn button{
     border: 1px solid;
@@ -420,18 +430,21 @@ body{
     border-radius: 3px;
     height: 33px;
     width: 100px;
-    margin: 50px 20px 0 0;
+    margin: 20px 20px 0 0;
   }
 
 
 
   /* side-bar */
   .ver-filter{
-    background-color: #f3f3f3;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
   }
   .filter-row{
     margin: 0;
   }
+  
 
 
   
@@ -588,21 +601,14 @@ td {
   margin-bottom: 10px
 }
 
-.contacts ul li{
-  display:inline-block;
-  width: 223px;
-}
-.contacts ul{
-  width: 700px;
-  padding-left:0;
-  
-}
+
 
 /* booking */
 
 .booking{
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  background-color: #f3f3f3;
+  background-color: white;
+  border-radius: 7px;
 }
 
 
@@ -680,11 +686,30 @@ td {
 /* event-registration  */
 
 .eve-cont{
-  background-color: rgb(238, 247, 252);
+  background-color:white;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
-.eve-piv{
+.eve-pic{
   background: linear-gradient(90deg,rgba(47,45,65,.9),rgba(47,45,65,.7));
 }
 .eve-reg{
   padding: 6% 3%;
+  
+}
+.userhome3{
+  background-color: #fff;
+}
+.payment{
+  padding: 50px 150px 70px 150px;
+}
+.heading{
+  height: 60px;
+  width: 100%;
+  background-color: #1A2238;
+  color: white;
+}
+.payment .card{
+  border: none;
+  border-radius: 0%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }

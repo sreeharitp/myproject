@@ -14,4 +14,6 @@ def aboutFn(request):
 def contactFn(request):
     return render(request,'contactus.html')        
 def regFn(request):
-    return render(request,'evereg.html')            
+    return render(request,'evereg.html')   
+def payFn(request):
+    return render(request,'userpayment.html')                         

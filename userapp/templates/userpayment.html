@@ -10,7 +10,8 @@
             </div>
             <div class="card">
                 <div class="card-body p-4">
-                    <p style="font-size: large; font-weight: bold;">An amount of Rs 5000/- should pay to confirm your Booking </p>
+                    <p style="font-size: large; font-weight: bold;">An amount of Rs 5000/- should pay to confirm your
+                        Booking </p>
 
                     <form action="">
                         <div class="form-outline mb-3">
@@ -27,19 +28,34 @@
                         </div>
 
                     </form>
-                    <button class="btn btn-success btn-lg btn-block" id="pay">Pay with Razorpay</button>
+                    <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#payment">Pay with
+                        Razorpay</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<script>
-    $('#pay').click(function(){
-        alert("Booked successfully..")
-    })
-</script>
 
+
+<div class="modal fade" id="payment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 340px;">
+        <div class="modal-content">
+            <div class="modal-body text-center border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="card paycard">
+                    <div
+                        style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;border: 1px solid #88B04B;">
+                        <i class="checkmark">✓</i>
+                    </div>
+                    <h2>Success</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

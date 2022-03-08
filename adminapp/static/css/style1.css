@@ -153,3 +153,6 @@ table .delete{
 .card span{
     font-size: 40px;
 }
+.adminlog{
+    background: radial-gradient(#fff,#ffd6d6);
+}

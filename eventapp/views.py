@@ -14,5 +14,10 @@ def createFn(request):
 def evedashFn(request):
     return render(request,'eventdash.html')     
 def evepayFn(request):
-    return render(request,'eventpay.html')           
+    return render(request,'eventpay.html') 
+def evereviewFn(request):
+    return render(request,'eventreview.html')       
+def eveviewFn(request):
+    return render(request,'eventview.html')               
+                                       
                            

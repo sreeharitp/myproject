@@ -9,6 +9,7 @@ urlpatterns =[
     path('adminrating',views.rateFn,name='adminrating'),
     path('addteam',views.addFn,name='addteam'),
     path('custview',views.viewFn,name='custview'),
-    path('request',views.reqFn,name='request')
+    path('request',views.reqFn,name='request'),
+    path('login',views.logFn,name='login')
 
 ]

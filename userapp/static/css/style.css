@@ -20,12 +20,16 @@ body{
 }
 .navbar .login{
   border: 1px solid  #FF645A;
-  border-radius: 20px;
-  height: 38px;
+  border-radius: 6px;
+  height: 35px;
+  width: 80px;
   font-weight: bold;
   color: #FF645A ;
   background-color: white;
   margin:15px 10px;
+}
+.navbar .btn{
+  padding: 0;
 }
 .navbar .login:hover{
   background-color:#FF645A ;
@@ -47,7 +51,7 @@ body{
   padding: 0 15px;
   height: 80px;
   line-height: 80px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: #FF645A;
   font-family: 'Akaya Telivigala';
@@ -101,12 +105,15 @@ body{
 }
 .home-row .jumbotron{
   width: 100%;
- height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.418)),url(../image/homeimg.jpg);
+  height: 500px;
+  background-image: linear-gradient(rgb(40 40 40 / 69%),rgb(50 50 50 / 58%)),url(../image/homeimg.jpg);
   background-size: cover;
   background-position: center;
   color: white;
   margin-bottom: 0;
+}
+.home-row .jumbotron span{
+  color: #FF645A;
 }
 .home-row h1{
   font-weight: 500;
@@ -243,6 +250,11 @@ body{
 
   .aboutus{
     padding: 100px 50px 300px 50px;
+  }
+  @media (max-width:576px){
+    .aboutus{
+      padding: 50px 5px ;
+    }
   }
 
   /* home-contact */
@@ -459,7 +471,7 @@ body{
     margin: 0;
   }
   .prof-img .fa{
-    font-size: 20px;
+    font-size: 15px;
   }
   .prof-img a{
     text-decoration: none;
@@ -602,14 +614,98 @@ td {
 }
 
 
+.cross {
+  padding: 10px;
+  color: #FBC02D;
+  cursor: pointer;
+  font-size: 23px
+}
+
+.cross i {
+  margin-top: -5px;
+  cursor: pointer
+}
+
+.comment-box {
+  padding: 5px
+}
+
+.comment-area textarea {
+  resize: none;
+  border: 1px solid #ff0000
+}
+
+.send {
+  color: #fff;
+  background-color: #FBC02D;
+  border-color: #FBC02D;
+}
+
+.send:hover {
+  color: #fff;
+  background-color: #FBC02D;
+  border-color: #FBC02D;
+}
+
+.rating {
+  display: inline-flex;
+  margin-top: -10px;
+  flex-direction: row-reverse
+}
+
+.rating>input {
+  display: none
+}
+
+
+.rating>label {
+  position: relative;
+  width: 65px;
+  font-size: 60px;
+  color: #FBC02D;
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+  opacity: 0.4
+}
+
 
 /* booking */
 
 .booking{
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   background-color: white;
-  border-radius: 7px;
+  border-radius: 5px;
+  position: sticky;
+  top: 85px; 
+  
 }
+#booked{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  background-color: white;
+  border-radius: 5px;
+  position: sticky;
+  top: 85px;
+
+ 
+}
+
 
 
 /* home-searchbar  */
@@ -702,6 +798,11 @@ td {
 .payment{
   padding: 50px 150px 70px 150px;
 }
+@media (max-width:576px){
+  .payment{
+    padding: 30px 0px;
+  }
+}
 .heading{
   height: 60px;
   width: 100%;
@@ -712,4 +813,28 @@ td {
   border: none;
   border-radius: 0%;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+/* paymodal  */
+
+.paycard h2 {
+  color: #88B04B;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.checkmark {
+color: #9ABC66;
+font-size: 100px;
+line-height: 200px;
+margin-left:-15px;
+}
+.paycard {
+background: white;
+border-radius: 4px;
+border: none;
+display: inline-block;
+margin: 0 auto;
+
 }

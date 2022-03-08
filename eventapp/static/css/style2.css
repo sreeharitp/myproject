@@ -84,6 +84,7 @@ a:focus {
 #sidebar .sidebar-header {
    color:#FF645A;
    background-color: #fff;
+   font-family: 'Akaya Telivigala';
 }
 
 #sidebar ul.components {
@@ -387,3 +388,24 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
 .card span{
     font-size: 40px;
 }
+
+
+
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+  .star-inactive {
+    color: #e0dfdc;
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+  .star{
+      width: 190px;
+  }
+
+
+
+
+  

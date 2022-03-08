@@ -18,4 +18,6 @@ def addFn(request):
 def viewFn(request):
     return render(request,'custview.html')     
 def reqFn(request):
-    return render(request,'request.html')                   
+    return render(request,'request.html')  
+def logFn(request):
+    return render(request,'adminlogin.html')                                        

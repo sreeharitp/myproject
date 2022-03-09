@@ -313,6 +313,7 @@ body{
   }
    .home-card button{
     border: 1px solid;
+    /* background-image: linear-gradient(to top,#e93f33,#ea4b32,#eb5632,#ec6032,#ec6a33); */
     background-color:#FF645A ;
     color: white;
     border-radius: 3px;

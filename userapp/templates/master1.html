@@ -21,6 +21,11 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&family=Ubuntu:wght@400;500;700&family=Akaya+Telivigala&display=swap"
     rel="stylesheet">
 </head>
+<style>
+   .dropdown-toggle::after {
+            content: none;
+        }
+</style>
 
 <body style="padding-top: 80px;">
   <header>
@@ -51,8 +56,22 @@
               <a class="nav-link" href="contactus">Contact Us</a>
             </li>
           </ul>
-          <button type="button" class="btn login my-auto" data-toggle="modal" data-target="#loginmodal">Log In</button>
+          {% if 'userid' in request.session %}
+          <ul style="list-style: none;" class="m-0 p-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <i class="far fa-user pr-2"></i>My Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="userprofile">Profile</a>
+                <a class="dropdown-item" onclick="location.href='/user/userlogout'">Log out</a>
+            </li>
+          </ul>
+          {% else %}
+          <button type="button" class="btn login my-auto" data-toggle="modal" data-target="#loginmodal">Sign In</button>
           <button type="button" class="btn login" data-toggle="modal" data-target="#registermodal">Sign Up</button>
+          {% endif %}
         </div>
       </nav>
     </div>
@@ -61,7 +80,7 @@
     <!-- login-modal -->
 
 
-    <div class="modal fade login" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <div class="modal fade  login" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content form-elegant">
@@ -74,7 +93,13 @@
           </div>
 
           <div class="modal-body">
-            <form id="signform">
+            {% if error == 1 %}
+            <div class="alert alert-success" role="alert">
+              Login Successfully..
+            </div>
+            {% endif %}
+            <form id="signform" action="/user/userlogin" method="POST">
+              {% csrf_token %}
               <div class="form-outline mt-3 mb-3">
                 <input type="email" name="email" class="form-control" placeholder="Email..." />
               </div>
@@ -161,7 +186,14 @@
         </div>
 
         <div class="modal-body">
-          <form id="regform">
+          {% if status == 1 %}
+          <div class="alert alert-success" role="alert">
+            Registered Successfully..
+          </div>
+          {% endif %}
+
+          <form id="regform" action="/user/master1" method="POST">
+            {% csrf_token %}
             <div class="form-group">
               <div class="row">
                 <div class="col p-1"><input type="text" class="form-control" name="first_name" placeholder="First Name">
@@ -174,13 +206,13 @@
               <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-            <div class="row">
-              <div class="col p-1"><input type="number" class="form-control" name="phone" placeholder="Mobile">
-              </div>
-              <div class="col p-1"><input type="text" class="form-control" name="place" placeholder="Place">
+              <div class="row">
+                <div class="col p-1"><input type="number" class="form-control" name="phone" placeholder="Mobile">
+                </div>
+                <div class="col p-1"><input type="text" class="form-control" name="place" placeholder="Place">
+                </div>
               </div>
             </div>
-          </div>
             <div class="form-group p-1">
               <input type="password" class="form-control" name="password" id="pass" placeholder="Password">
             </div>
@@ -188,10 +220,10 @@
               <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
             </div>
             <div class="form-group">
-             <small>
-              <label class="form-check-label"><input type="checkbox"> I accept the <a href="#">Terms
-                of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-             </small>
+              <small>
+                <label class="form-check-label"><input type="checkbox"> I accept the <a href="#">Terms
+                    of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+              </small>
             </div>
             <div class="form-group text-center">
               <button class="btn btn-primary btn-md" type="submit">Sign Up</button>
@@ -259,8 +291,8 @@
                 minlength: 10,
                 maxlength: 10,
               },
-              place:{
-                required:true
+              place: {
+                required: true
               },
               password: {
                 required: true,
@@ -373,7 +405,8 @@
 
           });
 
-         
+
+
 
 
         </script>

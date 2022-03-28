@@ -20,4 +20,6 @@ def viewFn(request):
 def reqFn(request):
     return render(request,'request.html')  
 def logFn(request):
-    return render(request,'adminlogin.html')                                        
+    return render(request,'adminlogin.html')    
+def eveviewFn(request):
+    return render(request,'eventviewpage.html')                                                                                

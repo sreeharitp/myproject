@@ -10,6 +10,7 @@ urlpatterns =[
     path('addteam',views.addFn,name='addteam'),
     path('custview',views.viewFn,name='custview'),
     path('request',views.reqFn,name='request'),
-    path('login',views.logFn,name='login')
+    path('login',views.logFn,name='login'),
+    path('eventviewpage',views.eveviewFn,name='eventviewpage')
 
 ]

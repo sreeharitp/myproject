@@ -19,12 +19,12 @@ body{
   padding: 0 25px 0 25px;
 }
 .navbar .login{
-  border: 1px solid  #FF645A;
+  border: 1px solid  #004A8F;
   border-radius: 6px;
   height: 40px;
   width: 90px;
   font-weight: bold;
-  color: #FF645A ;
+  color: #004A8F;
   background-color: white;
   margin:15px 10px;
 }
@@ -32,7 +32,7 @@ body{
   padding: 0;
 }
 .navbar .login:hover{
-  background-color:#FF645A ;
+  background-color:#004A8F;
   color: white;
 }
 .navbar .navbar-toggler-icon{
